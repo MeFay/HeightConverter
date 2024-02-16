@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+:root {
+  --main-color: #7678ed;
+  --main-color2: #ffffff;
+  --main-color3: #c8b6ff;
+  --box-shadow-color: pink;
+  --btn-color: #b8c0ff;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+#form {
+  background-color: var(--main-color2);
+  color: var(--main-color);
+  box-shadow: 0 0 15px var(--box-shadow-color);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55vw;
+  height: 25vh;
+  gap: 30px;
+}
+
+#content {
+  font-size: 30px;
+  color: var(--main-color3);
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#heightInput {
+  font-size: 45px;
+  border: 2px solid var(--main-color);
+  color: var(--main-color3);
+  border-radius: 5px;
+  text-align: center;
+  margin: 2px;
+  display: flex;
+  margin: 10px;
+}
+
+p {
+  font-size: 30px;
+  color: var(--main-color3);
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+#button {
+  background-color: var(--btn-color);
+  color: var(--main-color2);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  transition: 0.3s;
+}
+
+#button:hover {
+  background-color: var(--main-color3);
+  color: var(--main-color2);
+}
+
+#close {
+  background-color: var(--btn-color);
+  color: var(--main-color2);
+  border: 0px;
+  border-radius: 10px;
+  width: 2vw;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  font-size: 40px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 30%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  cursor: pointer;
+}
